@@ -64,10 +64,10 @@ Each project in this repository reflects the skills and knowledge gained through
 * **Description**: A web application that uses Flask for backend development and HTML/CSS for frontend, incorporating databases to store user data.
 * **Skills Learned**: Flask, web development, templates, and database interaction.
 
-### Final Project: **\Budgeting Tool for students**
+### Final Project: **Budgeting Tool for Students**
 
-* **Description**: \[Brief description of your final project.]
-* **Skills Learned**: \[List of technologies or concepts applied in the project.]
+* **Description**: The **Budgeting Tool for Students** is a web-based application designed to help students manage their finances effectively. With the rising costs of education and living expenses, it is crucial for students to track their spending and savings. This application allows users to log their expenses, categorize them, and receive suggestions on potential savings. The tool aims to empower students to develop better financial habits and improve their overall financial literacy.
+
 
 ---
 
