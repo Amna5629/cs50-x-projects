@@ -1,0 +1,20 @@
+Reflection
+
+Working on this problem set helped me better understand how to use SQL to get specific information from a database.
+
+1. **Learning the Database:**
+   First, I had to look at the database structure using `.schema` to see how the tables were related. Knowing which columns to use was key to writing the right queries.
+
+2. **Writing Queries:**
+   The simpler tasks, like listing all songs or ordering them by tempo, showed me how to use `SELECT` and `ORDER BY`. These were straightforward but made me more comfortable with basic SQL commands.
+
+3. **Filtering and Aggregating:**
+   Filtering songs by their danceability, energy, and valence taught me how to use the `WHERE` clause effectively. Calculating averages for song energy, especially for specific artists, helped me understand how powerful SQL can be for summarizing data.
+
+4. **String Matching:**
+   Finding songs with "feat." in the title was interesting because it showed how SQL can handle text searches. This is something that could be useful in real-life scenarios like finding collaborations in a music database.
+
+5. **Real-World Application:**
+   I realized how companies like Spotify could use these kinds of queries to personalize user experiences, like in their Spotify Wrapped feature.
+
+Overall, this exercise was a good way to practice SQL and think about how it can be applied in real situations. I feel more confident in my ability to work with databases now.

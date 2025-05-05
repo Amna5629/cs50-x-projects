@@ -1,0 +1,16 @@
+HTML Tags:
+1. <html> - Root element of the document.
+2. <head> - Container for metadata and links to styles/scripts.
+3. <title> - Sets the title of the webpage.
+4. <body> - Contains the content of the webpage.
+5. <nav> - Defines a set of navigation links.
+6. <a> - Defines a hyperlink.
+7. <h1> - Defines a top-level heading.
+8. <p> - Defines a paragraph of text.
+9. <form> - Container for form elements.
+10. <button> - Defines a clickable button.
+
+CSS Selectors:
+1. body - Selects the <body> tag.
+2. nav - Selects the <nav> tag.
+3. nav a - Selects all <a

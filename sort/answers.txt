@@ -1,0 +1,17 @@
+sort1 uses: Bubble sort
+
+How do you know?:
+The slower performance, especially with reversed input, suggests a less efficient algorithm like  Selection Sort.
+These algorithms are known for their inefficiency for large datasets.
+
+sort2 uses: Merge sort
+
+How do you know?:
+The consistent performance across different input types, including reversed lists, and the faster timings compared to sort1 and sort3 strongly suggest the use of a more efficient algorithm like Merge Sort.
+ Merge Sort is known for its efficiency, especially with larger datasets and various input orders.
+
+sort3 uses:Selection sort
+
+How do you know?:
+The intermediate performance between sort1 and sort2 suggests a slightly more efficient algorithm than Bubble Sort.
+

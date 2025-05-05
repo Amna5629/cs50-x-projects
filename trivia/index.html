@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Trivia!</title>
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #3b82f6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            margin: 0 0 10px 0;
+        }
+        hr {
+            margin: 10px 0;
+            border: 0;
+            height: 1px;
+            background: #ddd;
+        }
+        .button, .input {
+            display: inline-block;
+            margin: 5px 0;
+            padding: 10px 20px;
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover, .input:hover {
+            background-color: #2563eb;
+        }
+        .input {
+            margin-left: 10px;
+        }
+    </style>
+
+    <script>
+        function answerHTML(correct, element) {
+            if (correct) {
+                document.getElementById(element).innerHTML = "Correct!";
+            } else {
+                document.getElementById(element).innerHTML = "Incorrect!";
+            }
+        }
+
+        function resetButtonsState() {
+            var buttons = document.querySelectorAll(".button");
+            buttons.forEach(function (button) {
+                button.classList.remove('incorrect');
+                button.classList.remove('correct');
+            });
+        }
+
+        function getAnswerButton() {
+            resetButtonsState();
+            if (event.target.id === "correct") {
+                event.target.classList.add('correct');
+                answerHTML(true, "return_part_1");
+            } else {
+                event.target.classList.add('incorrect');
+                answerHTML(false, "return_part_1");
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var buttons = document.querySelectorAll(".button");
+            buttons.forEach(function (button) {
+                button.addEventListener("click", getAnswerButton);
+            });
+
+            var inputField = document.querySelector('input');
+            var checkButton = document.querySelector("#check");
+            checkButton.addEventListener('click', function () {
+                if (inputField.value.toLowerCase() === "switzerland") {
+                    answerHTML(true, "return_part_2");
+                } else {
+                    answerHTML(false, "return_part_2");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Trivia!</h1>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Part 1: Multiple Choice</h2>
+            <hr>
+            <h3>What is the approximate ratio of people to sheep in New Zealand?</h3>
+            <h2 id="return_part_1"></h2>
+            <button id="correct" class="button">6 people per 1 sheep</button>
+            <button class="button">3 people per 1 sheep</button>
+            <button class="button">1 person per 1 sheep</button>
+            <button class="button">1 person per 3 sheep</button>
+            <button class="button">1 person per 6 sheep</button>
+        </div>
+
+        <div class="section">
+            <h2>Part 2: Free Response</h2>
+            <hr>
+            <h3>In which country is it illegal to own only one guinea pig, as a lone guinea pig might get lonely?</h3>
+            <h2 id="return_part_2"></h2>
+            <input type="text">
+            <button id="check" class="input">Check Answer</button>
+        </div>
+    </div>
+</body>
+</html>
